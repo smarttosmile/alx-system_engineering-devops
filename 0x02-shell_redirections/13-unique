@@ -1,12 +1,2 @@
 #!/bin/bash
-
-while read -r word; do
-
-  ((words["$word"]++))
-done
-
-for word in "${!words[@]}"; do
-  if ((words["$word"] == 1)); then
-    echo "$word"
-  fi
-done | sort
+sort | unoq -u

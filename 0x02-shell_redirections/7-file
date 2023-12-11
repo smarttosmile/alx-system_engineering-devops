@@ -1,12 +1,2 @@
 #!/bin/bash
-# Define the file name with special characters
-file_name='\*\\'"Best School"\'\\*\$\?\*\*\*\*\*:)'
-
-# Create the file with the desired content
-echo "Best School" > "$file_name"
-
-# Print the list of files and their details
-ls -l
-
-# Display the content of the created file
-cat -e "$file_name"
+echo "Best school" > "\*\\\'\"Best School"\'\\\*$\?\*\*\*\*\*:)"
